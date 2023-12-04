@@ -21,7 +21,6 @@ app.use('/', route);
 mongoose.connect(config.mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    // Fix the write concern configuration
     writeConcern: {
         w: 'majority',
         wtimeout: 0,
